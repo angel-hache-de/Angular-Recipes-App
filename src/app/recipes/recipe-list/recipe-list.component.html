@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewRecipe()">
+      New Recipe
+    </button>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-xs-12">
+    <!-- <a href="#" class="list-group-item clearfix">
+            div
+            <div class="pull-left">
+                <h4>Recipe Name</h4>
+                <p>Description</p>
+            </div>
+            <span> </span>
+        </a> -->
+    <app-recipe-item
+      *ngFor="let recipeElement of recipes; let i = index"
+      [recipe]="recipeElement"
+      [index]="i"
+      ></app-recipe-item>
+  </div>
+</div>

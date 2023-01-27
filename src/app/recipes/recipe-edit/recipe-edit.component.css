@@ -1,0 +1,11 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    margin: 1rem 0;
+}
